@@ -54,34 +54,61 @@ body{
 
 h1{
 	font-size: 3em;
+  margin-top: 25px;
+  line-height: 1em;
 }
 
 h2{
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 p{
-	font-size: 1.25em;
+	font-size: 1.1em;
+}
+
+.fp-tableCell {
+  padding: 0 25px;
+}
+
+#section-2 > .fp-tableCell > p {
+  display: none;
 }
 
 .section{
 	text-align:center;
 }
 
+#burger, #close-btn {
+  margin: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+#burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
 #menu {
   position: fixed;
   top: 0;
   left: 0;
-  height: 40px;
+  height: 60px;
   z-index: 70;
-  width: 100%;
+  width: 0px;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 #menu li {
     display: inline-block;
     margin: 10px;
+    margin-right: 5px;
     color: #000;
     background: #fff;
     background: rgba(255,255,255, 0.5);
@@ -108,7 +135,7 @@ p{
 
 #menu li a,
 #menu li.active a{
-	padding: 9px 18px;
+	padding: 6px 12px;
 	display:block;
 }
 #menu li.active a{
@@ -120,14 +147,17 @@ p{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 850px;
   flex-wrap: wrap;
 }
 
 .matrix div {
-  width: 400px;
-  height: 150px;
+  width: 45%;
+  height: 120px;
   display: block;
+}
+
+.matrix div p {
+  padding-top: 25px;
 }
 
 #tasks li p {
@@ -137,21 +167,16 @@ p{
 .task-ctr {
   display: flex;
   justify-content: center;
+  padding: 0 25px;
+  padding-top: 10px;
+  flex-wrap: wrap;
 }
 
 #draggable1, #draggable2, #draggable3, #draggable4 {
-  width: auto;
+  width: 35%;
   padding: 0.5em;
-  margin: 10px 10px 10px 0;
+  margin: 0px 10px 10px 0;
 }
-
-/* #one, #two, #three, #four {
-  width: 150px;
-  height: 150px;
-  padding: 0.5em;
-  float: left;
-  margin: 10px;
-} */
 
 .sq-one {
   border: solid 2px teal;
@@ -185,4 +210,31 @@ p{
   text-align: left;
   padding: 20px;
   margin: 0 auto;
+}
+
+#fp-nav {
+  display: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  #fp-nav {
+    display: block;
+    margin-top: -43.5px;
+  }
+
+  #section-2 > .fp-tableCell > p {
+    display: block;
+    text-align: left;
+    padding: 0 7%;
+  }
+
+  .matrix div {
+    width: 35%;
+  }
+
+  #draggable1, #draggable2, #draggable3, #draggable4 {
+    width: auto;
+  }
 }

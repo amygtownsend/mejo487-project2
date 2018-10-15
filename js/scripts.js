@@ -1,7 +1,13 @@
+console.log('scripts loaded');
+
+var burger = document.getElementById('burger');
+var mobileNav = document.getElementById('menu');
+var closeBtn = document.getElementById('close-btn');
+
 var myFullpage = new fullpage('#fullpage', {
   anchors:['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
   sectionsColor: ['#4CCFB3', '#4CCFB3', '#4CCFB3', '#4CCFB3', '#4CCFB3', '#4CCFB3', '#4CCFB3', '#4CCFB3'],
-  navigationTooltips: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+  navigationTooltips: ['Home', '1', '2', '3', '4', '5', 'Quiz', 'Sources'],
   css3: true,
   scrollingSpeed: 800,
   navigation: true,
@@ -9,6 +15,21 @@ var myFullpage = new fullpage('#fullpage', {
   controlArrows: false,
   showActiveTooltip: true,
   menu: '#menu'
+});
+
+burger.addEventListener('click', function(){
+  console.log('burger-clicked');
+  mobileNav.style.width = '100%';
+  mobileNav.style.height = '120px';
+  this.style.display = 'none';
+  mobileNav.style.transition = '0s ease';
+});
+
+closeBtn.addEventListener('click', function(){
+  console.log('close-btn-clicked');
+  mobileNav.style.width = '0px';
+  burger.style.display = 'block';
+  mobileNav.style.transition = '0s ease';
 });
 
 $( function() {
@@ -49,33 +70,3 @@ $( function() {
      }
    });
  } );
-
-// $( function() {
-//
-//     // There's the gallery and the trash
-//     var $tasks = $( "#tasks" ),
-//       $one = $( "#one" ),
-//       $two = $( "#two" ),
-//       $three = $( "#three" ),
-//       $four = $( "#four" ),;
-//
-//     // Let the gallery items be draggable
-//     $( "li", $tasks ).draggable({
-//       revert: "invalid", // when not dropped, the item will revert back to its initial position
-//     });
-//
-//     // Let the trash be droppable, accepting the gallery items
-//     $one.droppable({
-//       accept: "#tasks > li",
-//       classes: {
-//         "ui-droppable-active": "ui-state-active",
-//         "ui-droppable-hover": "ui-state-hover"
-//       },
-//       drop: function( event, ui ) {
-//         $( this )
-//           .addClass( "ui-state-highlight" )
-//           .find( "p" )
-//             .html( "Dropped!" );
-//       }
-//     });
-//   } );
