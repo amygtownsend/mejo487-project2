@@ -5,8 +5,8 @@
 var quizJSON = {
     "info": {
         "name":    "Test Your Knowledge!",
-        "main":    "<p>Let's see how much you learned about productivity techniques and principles. Take the quiz!</p>",
-        "results": "<h5>Learn More</h5><p>Check out my sources below to learn more about productivity techniques and principles!</p>",
+        "main":    "<p>Let's see how much you learned about productivity techniques and principles.</p>",
+        "results": "<p>Check out my sources below to learn more about productivity techniques and principles!</p>",
         "level1":  "Effortlessly Efficient",
         "level2":  "Primarily Productive",
         "level3":  "Somewhat Successful",
