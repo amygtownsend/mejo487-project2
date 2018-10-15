@@ -64,6 +64,7 @@ h2{
 
 p{
 	font-size: 1.1em;
+  margin-top: 5px;
 }
 
 .fp-tableCell {
@@ -71,7 +72,7 @@ p{
 }
 
 #section-2 > .fp-tableCell > p {
-  display: none;
+  display: block;
 }
 
 .section{
@@ -142,39 +143,14 @@ p{
 	color: #fff;
 }
 
-.matrix {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.matrix div {
-  width: 45%;
-  height: 120px;
-  display: block;
-}
-
-.matrix div p {
-  padding-top: 25px;
-}
-
-#tasks li p {
-  font-size: 1em;
-}
-
-.task-ctr {
-  display: flex;
-  justify-content: center;
-  padding: 0 25px;
-  padding-top: 10px;
-  flex-wrap: wrap;
+.matrix, .task-ctr {
+  display: none;
 }
 
 #draggable1, #draggable2, #draggable3, #draggable4 {
   width: 35%;
   padding: 0.5em;
+  padding-top: 0.25em;
   margin: 0px 10px 10px 0;
 }
 
@@ -225,13 +201,37 @@ p{
   }
 
   #section-2 > .fp-tableCell > p {
-    display: block;
-    text-align: left;
     padding: 0 7%;
+  }
+
+  .task-ctr {
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .matrix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
   }
 
   .matrix div {
     width: 35%;
+    height: 100px;
+    display: block;
+  }
+
+  .matrix div p {
+    padding-top: 25px;
+  }
+
+  #tasks li p {
+    font-size: 1em;
   }
 
   #draggable1, #draggable2, #draggable3, #draggable4 {
