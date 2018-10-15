@@ -178,6 +178,7 @@ p{
   margin: 25px auto;
   padding: 25px 15px 35px 15px;
   background: #eee;
+  border-radius: 5px;
 }
 
 #slickQuiz p {
