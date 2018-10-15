@@ -9,6 +9,9 @@
 	<meta name="keywords"  content="productivity,eisenhower,pomodoro,pareto" />
 	<meta name="Resource-type" content="Document" />
   <link rel="stylesheet" href="css/fullpage.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/slickQuiz.css" type="text/css" />
+  <link rel="stylesheet" href="css/master.css" type="text/css" />
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
 <body class="fp-viewing-firstPage">
@@ -31,11 +34,37 @@
     <div class="section fp-table fp-section" id="section-2" data-fp-styles="null" data-anchor="page2">
       <div class="fp-tableCell">
         <h1>Eisenhower Method</h1>
+        <ul id="tasks" class="task-ctr">
+          <li id="draggable1" class="ui-widget-content">
+            <p>Read library book due today</p>
+          </li>
+          <li id="draggable2" class="ui-widget-content">
+            <p>Watch all of Grey's Anatomy</p>
+          </li>
+          <li id="draggable3" class="ui-widget-content">
+            <p>Pay next month's rent</p>
+          </li>
+          <li id="draggable4" class="ui-widget-content">
+            <p>Study for tomorrow's midterm</p>
+          </li>
+        </ul>
         <div class="matrix">
-          <div class="sq-one"></div>
-          <div class="sq-two"></div>
-          <div class="sq-three"></div>
-          <div class="sq-four"></div>
+          <div id="droppable1" class="sq-one">
+            <h3 class="ui-widget-header">Important and Urgent</h3>
+            <p>Drop task here</p>
+          </div>
+          <div id="droppable2" class="sq-two">
+            <h3 class="ui-widget-header">Important and Not Urgent</h3>
+            <p>Drop task here</p>
+          </div>
+          <div id="droppable3" class="sq-three">
+            <h3 class="ui-widget-header">Not Important and Urgent</h3>
+            <p>Drop task here</p>
+          </div>
+          <div id="droppable4" class="sq-four">
+            <h3 class="ui-widget-header">Not Important and Not Urgent</h3>
+            <p>Drop task here</p>
+          </div>
         </div>
       </div>
     </div>
@@ -69,8 +98,29 @@
     </div>
     <div class="section fp-table fp-section" id="section-7" data-fp-styles="null" data-anchor="page7">
       <div class="fp-tableCell">
-        <div class="intro">
-          <h1>Quiz</h1>
+        <h1>Quiz</h1>
+        <div id="slickQuiz">
+            <h2 class="quizName"><!-- where the quiz name goes --></h2>
+
+            <div class="quizArea">
+                <div class="quizHeader">
+                    <!-- where the quiz main copy goes -->
+
+                    <a class="button startQuiz" href="#">Get Started!</a>
+                </div>
+
+                <!-- where the quiz gets built -->
+            </div>
+
+            <div class="quizResults">
+                <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+
+                <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+
+                <div class="quizResultsCopy">
+                    <!-- where the quiz result copy goes -->
+                </div>
+            </div>
         </div>
       </div>
     </div>
@@ -128,5 +178,8 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/slickQuiz-config.js"></script>
+  <script src="js/slickQuiz.js"></script>
+  <script src="js/master.js"></script>
 </body>
 </html>

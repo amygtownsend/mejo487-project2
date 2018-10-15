@@ -61,7 +61,7 @@ h2{
 }
 
 p{
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .section{
@@ -120,16 +120,38 @@ p{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 850px;
   flex-wrap: wrap;
 }
 
 .matrix div {
-  width: 150px;
+  width: 400px;
   height: 150px;
-  background: white;
   display: block;
 }
+
+#tasks li p {
+  font-size: 1em;
+}
+
+.task-ctr {
+  display: flex;
+  justify-content: center;
+}
+
+#draggable1, #draggable2, #draggable3, #draggable4 {
+  width: auto;
+  padding: 0.5em;
+  margin: 10px 10px 10px 0;
+}
+
+/* #one, #two, #three, #four {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+} */
 
 .sq-one {
   border: solid 2px teal;
@@ -146,4 +168,20 @@ p{
 .sq-two, .sq-three, .sq-four {
   border-right: solid 2px teal;
   border-bottom: solid 2px teal;
+}
+
+/* Styles for quiz */
+
+#slickQuiz {
+  display: block;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 25px 15px 35px 15px;
+  background: #eee;
+}
+
+#slickQuiz p {
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto;
 }
