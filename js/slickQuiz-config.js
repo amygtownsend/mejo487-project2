@@ -6,12 +6,12 @@ var quizJSON = {
     "info": {
         "name":    "Test Your Knowledge!",
         "main":    "<p>Let's see how much you learned about productivity techniques and principles. Take the quiz!</p>",
-        "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
-        "level1":  "Jeopardy Ready",
-        "level2":  "Jeopardy Contender",
-        "level3":  "Jeopardy Amateur",
-        "level4":  "Jeopardy Newb",
-        "level5":  "Stay in school, kid..." // no comma here
+        "results": "<h5>Learn More</h5><p>Check out my sources below to learn more about productivity techniques and principles!</p>",
+        "level1":  "Effortlessly Efficient",
+        "level2":  "Primarily Productive",
+        "level3":  "Somewhat Successful",
+        "level4":  "Could Be Capable?",
+        "level5":  "Work Ethic Needs Work" // no comma here
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
@@ -23,50 +23,49 @@ var quizJSON = {
                 {"option": "Not Important / Not Urgent",     "correct": false} // no comma here
             ],
             "correct": "<p><span>That's right!</span> Schedule tasks that are important but not urgent!</p>",
-            "incorrect": "<p><span>Sorry.</span> It's actually tasks that are important but not urgent that you should schedule</p>" // no comma here
+            "incorrect": "<p><span>Nope!</span> It's actually tasks that are important but not urgent that you should schedule.</p>" // no comma here
         },
         { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "Which of the following best represents your preferred breakfast?",
+            "q": "How long is a standard 'Pomodoro'?",
             "a": [
-                {"option": "Bacon and eggs",               "correct": false},
-                {"option": "Fruit, oatmeal, and yogurt",   "correct": true},
-                {"option": "Leftover pizza",               "correct": false},
-                {"option": "Eggs, fruit, toast, and milk", "correct": true} // no comma here
+                {"option": "5 minutes",               "correct": false},
+                {"option": "15 minutes",              "correct": false},
+                {"option": "25 minutes",              "correct": false},
+                {"option": "30 minutes",              "correct": true} // no comma here
             ],
-            "select_any": true,
-            "correct": "<p><span>Nice!</span> Your cholestoral level is probably doing alright.</p>",
-            "incorrect": "<p><span>Hmmm.</span> You might want to reconsider your options.</p>" // no comma here
+            "correct": "<p><span>Yes!</span> A 'Pomodoro' consists of 25 minutes of work and a 5 minute break.</p>",
+            "incorrect": "<p><span>Sorry, no.</span> A 'Pomodoro' actually consists of 25 minutes of work and a 5 minute break.</p>" // no comma here
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select All
-            "q": "Where are you right now? Select ALL that apply.",
+            "q": "Which principle is Pareto analysis based on?",
             "a": [
-                {"option": "Planet Earth",           "correct": true},
-                {"option": "Pluto",                  "correct": false},
-                {"option": "At a computing device",  "correct": true},
-                {"option": "The Milky Way",          "correct": true} // no comma here
+                {"option": "10/90 principle",           "correct": false},
+                {"option": "20/80 principle",           "correct": true},
+                {"option": "30/70 principle",           "correct": false},
+                {"option": "50/50 principle",           "correct": false} // no comma here
             ],
-            "correct": "<p><span>Brilliant!</span> You're seriously a genius, (wo)man.</p>",
-            "incorrect": "<p><span>Not Quite.</span> You're actually on Planet Earth, in The Milky Way, At a computer. But nice try.</p>" // no comma here
+            "correct": "<p><span>You got it!</span> 20/80 principle: 20 percent of routines lead to 80 percent of outcomes. </p>",
+            "incorrect": "<p><span>Not quite.</span> 20 percent of routines lead to 80 percent of outcomes, remember?</p>" // no comma here
         },
         { // Question 4
-            "q": "How many inches of rain does Michigan get on average per year?",
+            "q": "You need to write an email to your boss by Friday. According to Parkinson's Law, when will you finish?",
             "a": [
-                {"option": "149",    "correct": false},
-                {"option": "32",     "correct": true},
-                {"option": "3",      "correct": false},
-                {"option": "1291",   "correct": false} // no comma here
+                {"option": "In 2 minutes",    "correct": false},
+                {"option": "On Thursday",     "correct": false},
+                {"option": "On Friday",      "correct": true},
+                {"option": "Never",   "correct": false} // no comma here
             ],
-            "correct": "<p><span>Holy bananas!</span> I didn't actually expect you to know that! Correct!</p>",
-            "incorrect": "<p><span>Fail.</span> Sorry. You lose. It actually rains approximately 32 inches a year in Michigan.</p>" // no comma here
+            "correct": "<p><span>Correct!</span> You are likely to take as much time as you've allotted for yourself.</p>",
+            "incorrect": "<p><span>Wrong.</span> You are likely to take as much time as you've allotted for yourself.</p>" // no comma here
         },
         { // Question 5
-            "q": "Is Earth bigger than a basketball?",
+            "q": "True or False: The 2-Minute Rule encourages you to finish every task in two minutes.",
             "a": [
-                {"option": "Yes",    "correct": true},
-                {"option": "No",     "correct": false} // no comma here
+                {"option": "True",    "correct": false},
+                {"option": "False",     "correct": true} // no comma here
             ],
-            "correct": "<p><span>Good Job!</span> You must be very observant!</p>",
-            "incorrect": "<p><span>ERRRR!</span> What planet Earth are <em>you</em> living on?!?</p>" // no comma here
+            "correct": "<p><span>Nice!</span> You should spend two minutes getting started, but you don't need to finish. </p>",
+            "incorrect": "<p><span>Too bad.</span> Not all tasks can be finished in two minutes! But you can spend two minutes getting started.</p>" // no comma here
         } // no comma here
     ]
 };
