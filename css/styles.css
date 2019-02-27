@@ -45,8 +45,8 @@ abbr,acronym { border: 0;
 
 /* Custom CSS
  * --------------------------------------- */
-body{
-	font-family: arial,helvetica;
+body, a{
+	font-family: 'Rubik', arial, helvetica, sans-serif;
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
@@ -65,6 +65,10 @@ h2{
 p, a{
 	font-size: 1.1em;
   margin-top: 5px;
+}
+
+a:hover {
+  color: rgba(0,0,0,0.8);
 }
 
 .fp-tableCell {
@@ -124,7 +128,8 @@ p, a{
 }
 
 #menu li a{
-	text-decoration:none;
+  text-decoration:none;
+  margin: 0;
 	color: #000;
 }
 #menu li.active a:hover{
@@ -183,15 +188,86 @@ p, a{
   display: block;
   max-width: 800px;
   margin: 25px auto;
-  padding: 25px 15px 35px 15px;
+  padding: 35px 15px 25px 15px;
   background: #eee;
+  color: #6d615a;
   border-radius: 5px;
 }
 
 #slickQuiz p {
-  text-align: left;
-  padding: 20px;
+  text-align: center;
   margin: 0 auto;
+  line-height: 1.2rem;
+}
+
+#slickQuiz .button {
+  background-color: #6d615a;
+}
+
+#slickQuiz .button:hover {
+  background-color: #4e443e;
+}
+
+#slickQuiz h2, #slickQuiz h3 {
+  font-weight: bold;
+}
+
+.quizHeader p {
+  padding: 20px;
+}
+
+ol.questions {
+  margin-top: 0;
+}
+
+.question {
+  padding: 0 10%;
+}
+
+.question h3, ul.answers {
+  text-align: center;
+}
+
+.question p {
+  padding: 25px 0;
+}
+
+.question p span {
+  padding-bottom: 5px;
+}
+
+.questionCount {
+  padding-bottom: 5px;
+}
+
+ul.answers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+.answers li {
+  flex: 1 1 275px;
+  width: auto;
+}
+
+ul.responses li {
+  margin: 0;
+}
+
+#section-8 ol {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#section-8 ol li {
+  text-align: left;
 }
 
 #fp-nav {
@@ -215,7 +291,7 @@ p, a{
     display: flex;
     justify-content: center;
     padding: 0 25px;
-    padding-top: 10px;
+    padding-top: 25px;
     flex-wrap: wrap;
   }
 
@@ -243,5 +319,13 @@ p, a{
 
   #draggable1, #draggable2, #draggable3, #draggable4 {
     width: auto;
+  }
+
+  .question {
+    padding: 0 100px;
+  }
+
+  .question h3, ul.answers {
+    text-align: left;
   }
 }
