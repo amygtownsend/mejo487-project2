@@ -35,7 +35,6 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     margin:0;
     padding:0;
-    color:#444;
 }
 q:before,q:after {
     content:'';
@@ -55,6 +54,7 @@ body{
 h1{
 	font-size: 3em;
   margin-top: 25px;
+  padding-bottom: 5px;
   line-height: 1em;
 }
 
@@ -147,6 +147,12 @@ p, a{
   display: none;
 }
 
+.matrix h3 {
+  padding: 5px;
+  background-color: #fff;
+  border: none;
+}
+
 #draggable1, #draggable2, #draggable3, #draggable4 {
   width: 35%;
   padding: 0.5em;
@@ -155,20 +161,20 @@ p, a{
 }
 
 .sq-one {
-  border: solid 2px teal;
+  border: solid 2px rgba(0,0,0,0.5);;
 }
 
 .sq-two {
-  border-top: solid 2px teal;
+  border-top: solid 2px rgba(0,0,0,0.5);
 }
 
 .sq-three {
-  border-left: solid 2px teal;
+  border-left: solid 2px rgba(0,0,0,0.5);
 }
 
 .sq-two, .sq-three, .sq-four {
-  border-right: solid 2px teal;
-  border-bottom: solid 2px teal;
+  border-right: solid 2px rgba(0,0,0,0.5);
+  border-bottom: solid 2px rgba(0,0,0,0.5);
 }
 
 /* Styles for quiz */
